@@ -17,10 +17,10 @@ float image3Y = appHeight * 1/1.3;
 float image3Width = appWidth * 1/15;
 float image3Height = appHeight * 1/9;
 
-float image4x = image3X *
-float image4y = image3Y *
-float image4width = image3Width * 
-float image4height = image4Height *
+float image4x = image3X * 1/0.96;
+float image4y = image3Y * 1/0.97;
+float image4width = image3Width * 1/6.3;
+float image4height = image3Height * 1/1.85;
 
   // Draw the rectangles
   rect(imageX, imageY, imageWidth, imageHeight);
