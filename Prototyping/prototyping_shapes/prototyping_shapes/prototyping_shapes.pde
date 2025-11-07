@@ -17,10 +17,16 @@ float image3Y = appHeight * 1/1.3;
 float image3Width = appWidth * 1/15;
 float image3Height = appHeight * 1/9;
 
+float image4x = image3X *
+float image4y = image3Y *
+float image4width = image3Width * 
+float image4height = image4Height *
+
   // Draw the rectangles
   rect(imageX, imageY, imageWidth, imageHeight);
   rect(image2X, image2Y, image2Width, image2Height);
   rect(image3X, image3Y, image3Width, image3Height);
+  rect(image4x, image4y, image4width, image4height);
 
   // Draw the first triangle inside image2
   float triangleX1 = imageX + imageWidth / 4; // Left corner of the triangle
