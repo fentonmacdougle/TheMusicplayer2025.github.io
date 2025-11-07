@@ -47,3 +47,4 @@ float image4height = image3Height * 1/1.85;
   float triangleY6 = image3Y + image3Height / 2;
 
   triangle(triangleX4, triangleY4, triangleX5, triangleY5, triangleX6, triangleY6);
+  
