@@ -59,7 +59,7 @@ float image5height = image2Height * 1/1.85;
   float triangleY7 = image2Y + image2Height / 4.3; // Top corner of the triangle
   float triangleX8 = image2X + image2Width / 2; // Bottom-left corner of the triangle
   float triangleY8 = image2Y + 3 * image2Height / 4;
-  float triangleX9 = image2X + 3 * image2Width / 13; // Right corner of the triangle
+  float triangleX9 = image2X + 3 * image2Width / 12; // Right corner of the triangle
   float triangleY9 = image2Y + image2Height / 2;
   
   triangle(triangleX7, triangleY7, triangleX8, triangleY8, triangleX9, triangleY9);
