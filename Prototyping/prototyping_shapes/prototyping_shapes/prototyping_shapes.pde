@@ -1,4 +1,4 @@
-fullScreen();
+ fullScreen();
 int appWidth = displayWidth;
 int appHeight = displayHeight;
 
@@ -22,16 +22,22 @@ float image4y = image3Y * 1/0.97;
 float image4width = image3Width * 1/6.3;
 float image4height = image3Height * 1/1.85;
 
+float image5x = image2X * 1/0.81;
+float image5y = image2Y * 1/0.97;
+float image5width = image2Width * 1/6.3;
+float image5height = image2Height * 1/1.85;
+
   // Draw the rectangles
   rect(imageX, imageY, imageWidth, imageHeight);
   rect(image2X, image2Y, image2Width, image2Height);
   rect(image3X, image3Y, image3Width, image3Height);
   rect(image4x, image4y, image4width, image4height);
+  rect(image5x, image5y, image5width, image5height);
 
   // Draw the first triangle inside image2
-  float triangleX1 = imageX + imageWidth / 4; // Left corner of the triangle
+  float triangleX1 = imageX + imageWidth / 3; // Left corner of the triangle
   float triangleY1 = imageY + imageHeight / 4; // Top corner of the triangle
-  float triangleX2 = imageX + imageWidth / 4; // Bottom-left corner of the triangle
+  float triangleX2 = imageX + imageWidth / 3; // Bottom-left corner of the triangle
   float triangleY2 = imageY + 3 * imageHeight / 4;
   float triangleX3 = imageX + 3 * imageWidth / 4; // Right corner of the triangle
   float triangleY3 = imageY + imageHeight / 2;
@@ -47,4 +53,16 @@ float image4height = image3Height * 1/1.85;
   float triangleY6 = image3Y + image3Height / 2;
 
   triangle(triangleX4, triangleY4, triangleX5, triangleY5, triangleX6, triangleY6);
+  
+    // Draw the second triangle inside image2
+  float triangleX7 = image2X + image2Width / 2; // Left corner of the triangle
+  float triangleY7 = image2Y + image2Height / 4.3; // Top corner of the triangle
+  float triangleX8 = image2X + image2Width / 2; // Bottom-left corner of the triangle
+  float triangleY8 = image2Y + 3 * image2Height / 4;
+  float triangleX9 = image2X + 3 * image2Width / 13; // Right corner of the triangle
+  float triangleY9 = image2Y + image2Height / 2;
+  
+  triangle(triangleX7, triangleY7, triangleX8, triangleY8, triangleX9, triangleY9);
+  
+  
   
