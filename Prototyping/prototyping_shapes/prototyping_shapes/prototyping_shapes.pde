@@ -2,27 +2,32 @@
 int appWidth = displayWidth;
 int appHeight = displayHeight;
 
-float imageX = appWidth * 1/4;
+ // middle block
+float imageX = appWidth * 1/2.2;
 float imageY = appHeight * 1/1.3;
 float imageWidth = appWidth * 1/15;
 float imageHeight = appHeight * 1/9;
 
-float image2X = appWidth * 1/5.5;
+ // block on the left
+float image2X = appWidth * 1/2.6;
 float image2Y = appHeight * 1/1.3;
 float image2Width = appWidth * 1/15;
 float image2Height = appHeight * 1/9; 
 
-float image3X = appWidth * 1/3.14;
+ // right block
+float image3X = appWidth * 1/1.91;
 float image3Y = appHeight * 1/1.3;
 float image3Width = appWidth * 1/15;
 float image3Height = appHeight * 1/9;
 
-float image4x = image3X * 1/0.96;
+ // interior right block
+float image4x = image3X * 1/0.97;
 float image4y = image3Y * 1/0.97;
 float image4width = image3Width * 1/6.3;
 float image4height = image3Height * 1/1.85;
 
-float image5x = image2X * 1/0.81;
+ // interior left block
+float image5x = image2X * 1/0.91;
 float image5y = image2Y * 1/0.97;
 float image5width = image2Width * 1/6.3;
 float image5height = image2Height * 1/1.85;

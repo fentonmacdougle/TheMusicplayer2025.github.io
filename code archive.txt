@@ -27,12 +27,20 @@ float image5y = image2Y * 1/0.97;
 float image5width = image2Width * 1/6.3;
 float image5height = image2Height * 1/1.85;
 
+float image6x = appWidth * 1/8.83;
+float image6y = appHeight * 1/1.3;
+float image6width = appWidth * 1/15;
+float image6height = appHeight * 1/9;
+
+
+
   // Draw the rectangles
   rect(imageX, imageY, imageWidth, imageHeight);
   rect(image2X, image2Y, image2Width, image2Height);
   rect(image3X, image3Y, image3Width, image3Height);
   rect(image4x, image4y, image4width, image4height);
   rect(image5x, image5y, image5width, image5height);
+  rect(image6x, image6y, image6width, image6height);
 
   // Draw the first triangle inside image2
   float triangleX1 = imageX + imageWidth / 3; // Left corner of the triangle
