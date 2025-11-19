@@ -32,12 +32,19 @@ float image5y = image2Y * 1/0.97;
 float image5width = image2Width * 1/6.3;
 float image5height = image2Height * 1/1.85;
 
+ // progress bar line
+float image6x = appWidth * 1/2.75;
+float image6y = appHeight * 1/1.18;
+float image6width = appWidth * 0.25;
+float image6height = appHeight * 0.009;
+
   // Draw the rectangles
   rect(imageX, imageY, imageWidth, imageHeight);
   rect(image2X, image2Y, image2Width, image2Height);
   rect(image3X, image3Y, image3Width, image3Height);
   rect(image4x, image4y, image4width, image4height);
   rect(image5x, image5y, image5width, image5height);
+  rect(image6x, image6y, image6width, image6height);
 
   // Draw the first triangle inside image2
   float triangleX1 = imageX + imageWidth / 3; // Left corner of the triangle
@@ -68,6 +75,13 @@ float image5height = image2Height * 1/1.85;
   float triangleY9 = image2Y + image2Height / 2;
   
   triangle(triangleX7, triangleY7, triangleX8, triangleY8, triangleX9, triangleY9);
+  
+  float spherex = appWidth * 1/2.75;
+  float spherey = appHeight * 1/1.177;
+  float spherewidth = appWidth * 0.016;
+  float sphereheight = appHeight *  0.03;
+  
+  ellipse(spherex, spherey, spherewidth, sphereheight);
   
   
   
