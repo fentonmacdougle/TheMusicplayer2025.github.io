@@ -38,7 +38,7 @@ float image6y = appHeight * 1/1.18;
 float image6width = appWidth * 0.25;
 float image6height = appHeight * 0.009;
 
- // volume button
+ // volume block
  float image7x = appWidth * 1/1.686;
  float image7y = appHeight * 1/1.15;
  float image7width = appWidth * 1/15;
