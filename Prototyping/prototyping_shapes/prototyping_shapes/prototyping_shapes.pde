@@ -38,6 +38,12 @@ float image6y = appHeight * 1/1.18;
 float image6width = appWidth * 0.25;
 float image6height = appHeight * 0.009;
 
+ // volume button
+ float image7x = appWidth * 1/1.686;
+ float image7y = appHeight * 1/1.15;
+ float image7width = appWidth * 1/15;
+ float image7height = appHeight * 1/9;
+
   // Draw the rectangles
   rect(imageX, imageY, imageWidth, imageHeight);
   rect(image2X, image2Y, image2Width, image2Height);
@@ -45,6 +51,7 @@ float image6height = appHeight * 0.009;
   rect(image4x, image4y, image4width, image4height);
   rect(image5x, image5y, image5width, image5height);
   rect(image6x, image6y, image6width, image6height);
+  rect(image7x, image7y, image7width, image7height);
 
   // Draw the first triangle inside image2
   float triangleX1 = imageX + imageWidth / 3; // Left corner of the triangle
