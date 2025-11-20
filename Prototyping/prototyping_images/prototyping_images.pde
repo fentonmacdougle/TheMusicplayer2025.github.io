@@ -3,3 +3,4 @@
 */
 //Display
 fullScreen(); //Landscape
+size(); //Portrait
