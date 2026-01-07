@@ -25,7 +25,7 @@ void setup() {
   minim = new Minim(this); //Manditory
   String upArrow = "../../";
   String musicFolder = "Music/"; //Developer Specific
-  String soundEffectsFolder = "sounds/"; //Developer Specific
+  String soundFolder = "sounds/"; //Developer Specific
   String normalFolder = "songs/"; //Developer Specific
   String songName1 = "ping-pong-classic-arcade-game-116818";
   String soundEffect1 = "Wood_Door_Open_and_Close_Series";
@@ -39,11 +39,17 @@ void setup() {
   soundEffects[currentSong] = minim.loadFile( file );
   //
   //Thrown by commenting out FILE, playList[] or soundEffects[]
-if ( playList[currentSong]==null || soundEffects[currentSong]==null) { //ERROR, play list is NULL
-  //See FILE or minim.loadFile
-  println("The Play List or Sound Effects did not load properly");
+  if ( playList[currentSong]==null || soundEffects[currentSong]==null)
+    //See FILE or minim.loadFile
+    println("The Play List or Sound Effects did not load properly");
   printArray(playList);
-  printArray(soundEffects);
+  printArray(soundfolder);
+  |
+    //
+    soundeffects[currentsong].play {
+  }
+:
+  //
 } //End setup
 //
 void draw() {
