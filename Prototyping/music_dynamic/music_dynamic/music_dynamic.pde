@@ -1,6 +1,5 @@
-
-
-//hearing music
+/* hearing music
+ - reading code with CTRL + T */
 //reminder, activate library
 //
 import ddf.minim.*;
