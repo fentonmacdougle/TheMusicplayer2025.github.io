@@ -32,10 +32,10 @@ void setup() {
   String fileExtension_mp3 = ".mp3";
   //
   String musicDirectory = upArrow + musicFolder + normalFolder; //Concatenation
-  String soundEffectsDirectory = upArrow + musicFolder + soundEffectsFolder; //Concatenation
+  String soundDirectory = upArrow + musicFolder + soundFolder; //Concatenation
   String file = musicDirectory + songName1 + fileExtension_mp3;
   playList[ currentSong ] = minim.loadFile( file );
-  file = soundEffectsDirectory + soundEffect1 + fileExtension_mp3;
+  file = soundDirectory + soundEffect1 + fileExtension_mp3;
   soundEffects[currentSong] = minim.loadFile( file );
   //
   //Thrown by commenting out FILE, playList[] or soundEffects[]
@@ -44,11 +44,11 @@ void setup() {
     println("The Play List or Sound Effects did not load properly");
   printArray(playList);
   printArray(soundfolder);
-  |
+
     //
-    soundeffects[currentsong].play {
-  }
-:
+    soundEffects[currentsong].play 
+;
+;
   //
 } //End setup
 //
