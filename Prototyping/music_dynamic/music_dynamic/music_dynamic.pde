@@ -37,6 +37,13 @@ void setup() {
   playList[ currentSong ] = minim.loadFile( file );
   file = soundEffectsDirectory + soundEffect1 + fileExtension_mp3;
   soundEffects[currentSong] = minim.loadFile( file );
+  //
+  //Thrown by commenting out FILE, playList[] or soundEffects[]
+if ( playList[currentSong]==null || soundEffects[currentSong]==null) { //ERROR, play list is NULL
+  //See FILE or minim.loadFile
+  println("The Play List or Sound Effects did not load properly");
+  printArray(playList);
+  printArray(soundEffects);
 } //End setup
 //
 void draw() {
