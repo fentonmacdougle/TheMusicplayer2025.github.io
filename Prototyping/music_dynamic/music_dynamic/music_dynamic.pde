@@ -25,7 +25,7 @@ void setup() {
   minim = new Minim(this); //Manditory
   String upArrow = "../../";
   String musicFolder = "Music/"; //Developer Specific
-  String soundFolder = "sounds/"; //Developer Specific
+  String soundEffect1 = "sounds/"; //Developer Specific
   String playList = "songs/"; //Developer Specific
   String songName1 = "ping-pong-classic-arcade-game-116818";
   String soundEffect1 = "Wood_Door_Open_and_Close_Series";
@@ -35,8 +35,8 @@ void setup() {
   String soundDirectory = upArrow + soundFolder; //Concatenation
   String file = musicDirectory + songName1 + fileExtension_mp3;
   playList[currentSong] = minim.loadFile(file)
-  file = soundDirectory + soundEffect1 + fileExtension_mp3;
-  soundFolder[currentSong] = minim.loadFile(file);
+  String file = soundDirectory + soundEffect1 + fileExtension_mp3;
+  sounds[currentSong] = minim.loadFile(file);
   //
   //Thrown by commenting out FILE, playList[] or soundEffects[]
   if (playList[currentSong]==null || soundFolder[currentSong]==null)
