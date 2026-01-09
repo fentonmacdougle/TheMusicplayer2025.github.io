@@ -26,33 +26,34 @@ void setup() {
   String upArrow = "../../";
   String musicFolder = "Music/"; //Developer Specific
   String soundFolder = "sounds/"; //Developer Specific
-  String normalFolder = "songs/"; //Developer Specific
+  String playList = "songs/"; //Developer Specific
   String songName1 = "ping-pong-classic-arcade-game-116818";
   String soundEffect1 = "Wood_Door_Open_and_Close_Series";
   String fileExtension_mp3 = ".mp3";
   //
-  String musicDirectory = upArrow + musicFolder + normalFolder; //Concatenation
-  String soundDirectory = upArrow + musicFolder + soundFolder; //Concatenation
+  String musicDirectory = upArrow + playList; //Concatenation
+  String soundDirectory = upArrow + soundFolder; //Concatenation
   String file = musicDirectory + songName1 + fileExtension_mp3;
-  playList[ currentSong ] = minim.loadFile( file );
+  playList[currentSong] = minim.loadFile(file)
   file = soundDirectory + soundEffect1 + fileExtension_mp3;
-  soundEffects[currentSong] = minim.loadFile( file );
+  soundFolder[currentSong] = minim.loadFile(file);
   //
   //Thrown by commenting out FILE, playList[] or soundEffects[]
-  if ( playList[currentSong]==null || soundEffects[currentSong]==null)
+  if (playList[currentSong]==null || soundFolder[currentSong]==null)
     //See FILE or minim.loadFile
     println("The Play List or Sound Effects did not load properly");
   printArray(playList);
-  printArray(soundfolder);
-
-    //
-    soundEffects[currentsong].play 
-;
-;
+  printArray(soundFolder);
+  //
+  //soundFolder[currentsong].play();
+  playList[currentsong].play();
+  ;
+  ;
   //
 } //End setup
 //
 void draw() {
+  playList[currentsong].play();
 } //End draw
 //
 void mousePressed() {
